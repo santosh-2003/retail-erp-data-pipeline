@@ -16,3 +16,7 @@ dbt/retail_erp/logs/
 # OS/editor junk
 .vscode/
 Thumbs.db
+dbt/logs/
+__pycache__/
+*.pyc
+ingestion/logs/
