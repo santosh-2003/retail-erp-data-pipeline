@@ -2,6 +2,7 @@ import pandas as pd
 from db_config import get_engine
 import os 
 from pathlib import Path
+from sqlalchemy import create_engine, text
 
 RAW_DATA_DIR = os.path.join(
                 os.path.dirname(__file__),"..","data","raw")
@@ -24,10 +25,13 @@ TABLES = [
 
 def load_csv_to_table(engine, csv_path, table_name):
     df = pd.read_csv(csv_path, dtype=str, keep_default_na = False)
+    with engine.begin() as conn:
+        conn.execute(text(f'TRUNCATE TABLE "{table_name}" RESTART IDENTITY CASCADE'))
+        
     df.to_sql(
         table_name,
         engine,
-        if_exists="replace",
+        if_exists="append",
         index=False,
         method="multi",
         chunksize=1000,

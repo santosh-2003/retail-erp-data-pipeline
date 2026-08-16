@@ -14,9 +14,34 @@ services:
     networks:
       - retail_erp_net
 
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: airflow_retail_erp
+    restart: unless-stopped
+    depends_on:
+      - postgres_retail_erp
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - airflow_data:/opt/airflow
+      - ./dags:/opt/airflow/dags
+      - ./ingestion:/opt/airflow/retail_erp_project/ingestion
+      - ./data:/opt/airflow/retail_erp_project/data
+      - ./dbt/retail_erp:/opt/airflow/retail_erp_project/dbt/retail_erp
+      - ./airflow_profiles:/opt/airflow/.dbt
+    networks:
+      - retail_erp_net
+    command: standalone
+
 volumes:
   retail_erp_pgdata:
     name: retail_erp_pgdata
+  airflow_data:
+    name: airflow_data
 
 networks:
   retail_erp_net:
