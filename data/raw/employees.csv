@@ -1,0 +1,21 @@
+employee_id,employee_name,store_id,position,hire_date,salary
+EMP001,Anita Neupane,ST001,Store Manager,2020-08-02,50731
+EMP002,Kabita Basnet,ST002,Store Manager,2020-06-12,54749
+EMP003,Anita Magar,ST003,Store Manager,2025-04-08,51171
+EMP004,Sabina Adhikari,ST004,Store Manager,2024-11-26,46531
+EMP005,Manisha Joshi,ST005,Store Manager,2023-01-22,45298
+EMP006,Radha Magar,ST001,Sales Associate,2021-05-27,25598
+EMP007,Sabitri Karki,ST002,Sales Associate,2020-07-17,22538
+EMP008,Bikash Magar,ST003,Cashier,2024-09-10,24315
+EMP009,Ramesh Joshi,ST004,Cashier,2022-10-11,24277
+EMP010,Sarala Adhikari,ST005,Sales Associate,2023-03-24,22527
+EMP011,Deepak Poudel,ST001,Sales Associate,2020-11-09,27170
+EMP012,Hari Lama,ST002,Store Manager,2021-08-30,52277
+EMP013,Sarala Magar,ST003,Inventory Clerk,2021-08-16,23374
+EMP014,Sarita Magar,ST004,Inventory Clerk,2021-03-05,22013
+EMP015,Krishna Yadav,ST005,Inventory Clerk,2022-02-28,25374
+EMP016,Milan Joshi,ST001,Sales Associate,2023-09-11,22655
+EMP017,Rajesh Pandey,ST002,Sales Associate,2021-10-21,20854
+EMP018,Bikram Khadka,ST003,Sales Associate,2020-02-25,28452
+EMP019,Rita Magar,ST004,Cashier,2020-10-18,20234
+EMP020,Sagar Joshi,ST005,Sales Associate,2023-11-27,21502

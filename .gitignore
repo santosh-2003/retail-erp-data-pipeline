@@ -1,0 +1,18 @@
+# Python virtual environment (folder is named 'dbt', not 'venv')
+dbt/Lib/
+dbt/Scripts/
+dbt/Include/
+dbt/pyvenv.cfg
+dbt/Lib64/
+
+# dbt build artifacts (auto-regenerated every run)
+dbt/retail_erp/target/
+dbt/retail_erp/dbt_packages/
+dbt/retail_erp/logs/
+
+# Environment secrets
+.env
+
+# OS/editor junk
+.vscode/
+Thumbs.db

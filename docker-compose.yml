@@ -1,0 +1,23 @@
+services:
+  postgres_retail_erp:
+    image: postgres:16
+    container_name: postgres_retail_erp
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-retail_erp_dw}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - retail_erp_pgdata:/var/lib/postgresql/data
+    networks:
+      - retail_erp_net
+
+volumes:
+  retail_erp_pgdata:
+    name: retail_erp_pgdata
+
+networks:
+  retail_erp_net:
+    name: retail_erp_net

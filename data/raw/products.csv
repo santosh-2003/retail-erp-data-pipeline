@@ -1,0 +1,61 @@
+product_id,product_name,category,subcategory,brand,unit_price,supplier
+PROD0001,Wireless Earbuds,Electronics,Computer Peripherals,Logitech,14902.6,Logitech Distributors Pvt Ltd
+PROD0002,Bluetooth Speaker,Electronics,Audio,Logitech,1227.62,Logitech Distributors Pvt Ltd
+PROD0003,usb cable,Electronics,Computer Peripherals,HP,16137.02,HP Distributors Pvt Ltd
+PROD0004,Power Bank,Electronics,Home Appliances,HP,17199.52,HP Distributors Pvt Ltd
+PROD0005,LED Monitor,Electronics,Home Appliances,Samsung,22496.78,Samsung Distributors Pvt Ltd
+PROD0006,Wireless Mouse,Electronics,Audio,Samsung,3285.86,Samsung Distributors Pvt Ltd
+PROD0007,Keyboard,Electronics,Computer Peripherals,HP,24866.5,HP Distributors Pvt Ltd
+PROD0008,Smart pLuG,Electronics,Home Appliances,Logitech,15194.86,Logitech Distributors Pvt Ltd
+PROD0009,Router,Electronics,Mobile Accessories,JBL,10755.09,JBL Distributors Pvt Ltd
+PROD0010,Webcam,Electronics,Computer Peripherals,Sony,17217.5,Sony Distributors Pvt Ltd
+PROD0011,SOFa sEt,Furniture,Living Room,IKEA,2466.77,IKEA Distributors Pvt Ltd
+PROD0012,Office Chair,Furniture,Office,IKEA,24214.71,IKEA Distributors Pvt Ltd
+PROD0013,Bookshelf,Furniture,Office,IKEA,14511.28,IKEA Distributors Pvt Ltd
+PROD0014,Dining Table,Furniture,Bedroom,UrbanLadder,5722.48,UrbanLadder Distributors Pvt Ltd
+PROD0015,Bed Frame,Furniture,Bedroom,Nilkamal,3004.9,Nilkamal Distributors Pvt Ltd
+PROD0016,Coffee Table,Furniture,Living Room,UrbanLadder,21152.11,UrbanLadder Distributors Pvt Ltd
+PROD0017,Wardrobe,Furniture,Bedroom,IKEA,15283.52,IKEA Distributors Pvt Ltd
+PROD0018,TV Unit,Furniture,Bedroom,Nilkamal,869.49,Nilkamal Distributors Pvt Ltd
+PROD0019,Non-Stick Pan,Kitchen,Storage,Borosil,8872.93,Borosil Distributors Pvt Ltd
+PROD0020,Pressure Cooker,Kitchen,Cookware,Cello,1879.2,Cello Distributors Pvt Ltd
+PROD0021,Storage Container,Kitchen,Cookware,Prestige,18690.88,Prestige Distributors Pvt Ltd
+PROD0022,Electric Kettle,Kitchen,Storage,Cello,8621.27,Cello Distributors Pvt Ltd
+PROD0023,Mixer Grinder,Kitchen,Small Appliances,Borosil,19454.37,Borosil Distributors Pvt Ltd
+PROD0024,Toaster,Kitchen,Cookware,Prestige,4016.16,Prestige Distributors Pvt Ltd
+PROD0025,Induction Cooktop,Kitchen,Cookware,Prestige,6911.76,Prestige Distributors Pvt Ltd
+PROD0026,Yoga Mat,Sports,Outdoor,Puma,10442.47,Puma Distributors Pvt Ltd
+PROD0027,Football,Sports,Team Sports,Nike,8727.55,Nike Distributors Pvt Ltd
+PROD0028,Dumbbell Set,Sports,Team Sports,Puma,13244.31,Puma Distributors Pvt Ltd
+PROD0029,RUNNING SHOES,Sports,Fitness,Puma,24613.47,Puma Distributors Pvt Ltd
+PROD0030,Cricket Bat,Sports,Outdoor,Adidas,19218.64,Adidas Distributors Pvt Ltd
+PROD0031,Badminton Racket,Sports,Outdoor,Decathlon,3131.61,Decathlon Distributors Pvt Ltd
+PROD0032,Cycling Helmet,Sports,Outdoor,Adidas,3360.26,Adidas Distributors Pvt Ltd
+PROD0033,Novel Collection,Books,Fiction,Oxford Press,1941.08,Oxford Press Distributors Pvt Ltd
+PROD0034,Cookbook,Books,Fiction,Ratna Books,615.73,Ratna Books Distributors Pvt Ltd
+PROD0035,Self Help Guide,Books,Non-Fiction,Ratna Books,14398.98,Ratna Books Distributors Pvt Ltd
+PROD0036,academic textbook,Books,Non-Fiction,Oxford Press,3012.06,Oxford Press Distributors Pvt Ltd
+PROD0037,Children Storybook,Books,Fiction,Ratna Books,20825.84,Ratna Books Distributors Pvt Ltd
+PROD0038,Biography,Books,Fiction,Ratna Books,21135.44,Ratna Books Distributors Pvt Ltd
+PROD0039,Instant Noodles,Groceries,Staples,Unilever,13170.47,Unilever Distributors Pvt Ltd
+PROD0040,Cooking Oil 1L,Groceries,Beverages,Nestle,5656.07,Nestle Distributors Pvt Ltd
+PROD0041,Basmati Rice 5kg,Groceries,Snacks,Wai Wai,13335.53,Wai Wai Distributors Pvt Ltd
+PROD0042,Green Tea Pack,Groceries,Beverages,Nestle,18225.37,Nestle Distributors Pvt Ltd
+PROD0043,Chocolate Box,Groceries,Snacks,CG Foods,2704.69,CG Foods Distributors Pvt Ltd
+PROD0044,Mineral Water Pack,Groceries,Snacks,CG Foods,19041.35,CG Foods Distributors Pvt Ltd
+PROD0045,Cotton T-Shirt,Clothing,Men,Bata,11679.23,Bata Distributors Pvt Ltd
+PROD0046,Denim Jeans,Clothing,Kids,Bata,17076.17,Bata Distributors Pvt Ltd
+PROD0047,Formal Shirt,Clothing,Kids,Zara,21626.53,Zara Distributors Pvt Ltd
+PROD0048,Winter Jacket,Clothing,Men,Bata,1846.91,Bata Distributors Pvt Ltd
+PROD0049,Kids Hoodie,Clothing,Women,Zara,14846.78,Zara Distributors Pvt Ltd
+PROD0050,summer dress,Clothing,Men,Zara,11624.3,Zara Distributors Pvt Ltd
+PROD0051,Formal Shirt,Clothing,Men,H&M,15432.96,H&M Distributors Pvt Ltd
+PROD0052,Academic Textbook,Books,Non-Fiction,Penguin,11325.88,Penguin Distributors Pvt Ltd
+PROD0053,Kids Hoodie,Clothing,Kids,Levis,8139.94,Levis Distributors Pvt Ltd
+PROD0054,Cricket Bat,Sports,Fitness,Nike,11345.5,Nike Distributors Pvt Ltd
+PROD0055,Formal Shirt,Clothing,Kids,H&M,12688.04,H&M Distributors Pvt Ltd
+PROD0056,Sofa Set,Furniture,Living Room,UrbanLadder,24776.0,UrbanLadder Distributors Pvt Ltd
+PROD0057,Children Storybook,Books,Academic,HarperCollins,9192.86,HarperCollins Distributors Pvt Ltd
+PROD0058,Electric Kettle,Kitchen,Storage,Borosil,17020.61,Borosil Distributors Pvt Ltd
+PROD0059,Wireless Mouse,Electronics,Mobile Accessories,JBL,2498.47,JBL Distributors Pvt Ltd
+PROD0060,Green Tea Pack,Groceries,Beverages,Nestle,18134.78,Nestle Distributors Pvt Ltd

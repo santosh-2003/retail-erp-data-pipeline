@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: fact_sales
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_id
+      - name: product_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id
+      - name: store_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_stores')
+                field: store_id
+      - name: employee_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_employees')
+                field: employee_id
+      - name: order_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Completed', 'Returned', 'Cancelled']

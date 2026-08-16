@@ -1,0 +1,242 @@
+[0m19:14:43.643836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F7288170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F5676DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F728A1E0>]}
+
+
+============================== 19:14:43.690990 | 271f87ee-5811-419e-a080-d7fbdc34cf84 ==============================
+[0m19:14:43.690990 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:14:43.691989 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:14:43.831056 [info ] [MainThread]: dbt version: 1.12.2
+[0m19:14:43.831056 [info ] [MainThread]: python version: 3.12.10
+[0m19:14:43.832568 [info ] [MainThread]: python path: E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\Scripts\python.exe
+[0m19:14:43.833676 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m19:14:43.838672 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.databricks'
+[0m19:14:43.925315 [info ] [MainThread]: Using profiles dir at C:\Users\Santosh G's\.dbt
+[0m19:14:43.926823 [info ] [MainThread]: Using profiles.yml file at C:\Users\Santosh G's\.dbt\profiles.yml
+[0m19:14:43.926823 [info ] [MainThread]: Using dbt_project.yml file at E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\dbt_project.yml
+[0m19:14:43.928871 [info ] [MainThread]: Configuration:
+[0m19:14:43.929942 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:14:43.930925 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m19:14:43.931930 [info ] [MainThread]: Required dependencies:
+[0m19:14:43.932830 [debug] [MainThread]: Executing "git --help"
+[0m19:14:43.980287 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:14:43.980287 [debug] [MainThread]: STDERR: "b''"
+[0m19:14:43.981288 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:14:43.981288 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:14:43.982326 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:14:43.982931 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "sanos_dbt", target "dev" invalid: Runtime Error
+    Could not find adapter type databricks!
+
+
+[0m19:14:43.982931 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+
+
+[0m19:14:43.983975 [debug] [MainThread]: Command `dbt debug` failed at 19:14:43.983975 after 0.64 seconds
+[0m19:14:43.983975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F3615670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F5676DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8F74AF920>]}
+[0m19:14:43.983975 [debug] [MainThread]: Flushing usage events
+[0m19:14:45.399738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:23:27.248693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D28C71670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D29375670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D2B2CD280>]}
+
+
+============================== 19:23:27.252784 | d7d00896-2894-49e1-9870-0f286dc63376 ==============================
+[0m19:23:27.252784 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:23:27.253703 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'E:\\Data Engineering\\retail_erp_dbt\\retail_erp_project\\dbt\\retail_erp\\logs'}
+[0m19:23:27.273541 [info ] [MainThread]: dbt version: 1.12.2
+[0m19:23:27.274580 [info ] [MainThread]: python version: 3.12.10
+[0m19:23:27.274580 [info ] [MainThread]: python path: E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\Scripts\python.exe
+[0m19:23:27.275491 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m19:23:27.331154 [info ] [MainThread]: Using profiles dir at C:\Users\Santosh G's\.dbt
+[0m19:23:27.332185 [info ] [MainThread]: Using profiles.yml file at C:\Users\Santosh G's\.dbt\profiles.yml
+[0m19:23:27.332185 [info ] [MainThread]: Using dbt_project.yml file at E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\dbt_project.yml
+[0m19:23:27.334064 [info ] [MainThread]: adapter type: postgres
+[0m19:23:27.335059 [info ] [MainThread]: adapter version: 1.11.0
+[0m19:23:27.431363 [info ] [MainThread]: Configuration:
+[0m19:23:27.432872 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:23:27.433981 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:23:27.433981 [info ] [MainThread]: Required dependencies:
+[0m19:23:27.434999 [debug] [MainThread]: Executing "git --help"
+[0m19:23:27.476654 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:23:27.477757 [debug] [MainThread]: STDERR: "b''"
+[0m19:23:27.477757 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:23:27.478762 [info ] [MainThread]: Connection:
+[0m19:23:27.478762 [info ] [MainThread]:   host: localhost
+[0m19:23:27.478762 [info ] [MainThread]:   port: 5432
+[0m19:23:27.479773 [info ] [MainThread]:   user: postgres
+[0m19:23:27.479773 [info ] [MainThread]:   database: retail_erp_dw
+[0m19:23:27.479773 [info ] [MainThread]:   schema: dbt_dev
+[0m19:23:27.480752 [info ] [MainThread]:   connect_timeout: 10
+[0m19:23:27.480752 [info ] [MainThread]:   role: None
+[0m19:23:27.480752 [info ] [MainThread]:   search_path: None
+[0m19:23:27.480752 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:23:27.481661 [info ] [MainThread]:   sslmode: None
+[0m19:23:27.481661 [info ] [MainThread]:   sslcert: None
+[0m19:23:27.482673 [info ] [MainThread]:   sslkey: None
+[0m19:23:27.482673 [info ] [MainThread]:   sslrootcert: None
+[0m19:23:27.482673 [info ] [MainThread]:   application_name: dbt
+[0m19:23:27.483666 [info ] [MainThread]:   autocommit: False
+[0m19:23:27.483666 [info ] [MainThread]:   retries: 1
+[0m19:23:27.485174 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m19:23:27.646640 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:23:33.122785 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:23:33.122785 [debug] [MainThread]: On debug: select 1 as id
+[0m19:23:33.123784 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:23:33.163835 [debug] [MainThread]: SQL status: SELECT 1 in 0.040 seconds
+[0m19:23:33.164900 [debug] [MainThread]: On debug: Close
+[0m19:23:33.164900 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:23:33.165835 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:23:33.166819 [debug] [MainThread]: Command `dbt debug` succeeded at 19:23:33.166819 after 6.10 seconds
+[0m19:23:33.166819 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:23:33.167819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D2D5C4A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D2D7FE810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029D2B8FFCB0>]}
+[0m19:23:33.168329 [debug] [MainThread]: Flushing usage events
+[0m19:23:34.504961 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:24:56.869276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EF7CC1A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFA40D220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFA40D760>]}
+
+
+============================== 19:24:56.873363 | 28445c92-f8b7-49d4-b35a-dd579703a281 ==============================
+[0m19:24:56.873363 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:24:56.873363 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'invocation_command': 'dbt show --select source:raw.raw_customers', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'E:\\Data Engineering\\retail_erp_dbt\\retail_erp_project\\dbt\\retail_erp\\logs'}
+[0m19:24:57.402214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC90FAA0>]}
+[0m19:24:57.457215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC4663F0>]}
+[0m19:24:57.528417 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m19:24:57.733072 [debug] [MainThread]: checksum: b5ae68cb5bf32e987498c1541ffdb4dad449ad8fc953043c4b03557cc33f5a4c, vars: {}, profile: retail_erp, target: dev, version: 1.12.2
+[0m19:24:57.734035 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:24:57.735074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC962E70>]}
+[0m19:25:01.059156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC753FE0>]}
+[0m19:25:01.116801 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:25:01.201130 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:25:01.328805 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:25:01.332372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFCC751C0>]}
+[0m19:25:01.333327 [info ] [MainThread]: Found 14 models, 477 macros
+[0m19:25:01.333327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '28445c92-f8b7-49d4-b35a-dd579703a281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC9C9760>]}
+[0m19:25:01.333327 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'source:raw.raw_customers' does not match any enabled nodes
+[0m19:25:01.334938 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m19:25:01.336039 [debug] [MainThread]: Command end result
+[0m19:25:01.363941 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:25:01.366162 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:25:01.369217 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:25:01.374763 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\run_results.json
+[0m19:25:01.374763 [debug] [MainThread]: Command `dbt show` succeeded at 19:25:01.374763 after 4.67 seconds
+[0m19:25:01.374763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFC438080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFAAA23F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EFAAA22D0>]}
+[0m19:25:01.376273 [debug] [MainThread]: Flushing usage events
+[0m19:25:02.762456 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:06.194408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281590B5D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815E2FB470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815E2F8FB0>]}
+
+
+============================== 19:27:06.198414 | a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4 ==============================
+[0m19:27:06.198414 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:27:06.199413 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt show --select source:raw.raw_customers', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'E:\\Data Engineering\\retail_erp_dbt\\retail_erp_project\\dbt\\retail_erp\\logs'}
+[0m19:27:06.359007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815E6D4110>]}
+[0m19:27:06.415485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815C23D070>]}
+[0m19:27:06.429917 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m19:27:06.596356 [debug] [MainThread]: checksum: b5ae68cb5bf32e987498c1541ffdb4dad449ad8fc953043c4b03557cc33f5a4c, vars: {}, profile: retail_erp, target: dev, version: 1.12.2
+[0m19:27:06.728198 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:27:06.729723 [debug] [MainThread]: Partial parsing: updated file: retail_erp://models\staging\_staging__sources.yml
+[0m19:27:06.897462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815E700AA0>]}
+[0m19:27:07.035859 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:27:07.038872 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:27:07.066897 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:27:07.069997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815EC469C0>]}
+[0m19:27:07.069997 [info ] [MainThread]: Found 14 models, 5 sources, 477 macros
+[0m19:27:07.071616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7ff583e-998e-4d5c-9bb9-3d21f5a6a1c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815EC50D70>]}
+[0m19:27:07.073707 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m19:27:07.074622 [debug] [MainThread]: Command end result
+[0m19:27:07.103204 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:27:07.106285 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:27:07.110256 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:27:07.114366 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\run_results.json
+[0m19:27:07.115330 [debug] [MainThread]: Command `dbt show` succeeded at 19:27:07.115330 after 1.07 seconds
+[0m19:27:07.115330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281591E6C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281591E4CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002815A3138C0>]}
+[0m19:27:07.115330 [debug] [MainThread]: Flushing usage events
+[0m19:27:08.439143 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:41.316339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C5945DC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C5560FE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C578129C0>]}
+
+
+============================== 19:28:41.320296 | 585abb6f-18a8-47fb-ab25-a13d8d69018f ==============================
+[0m19:28:41.320296 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:28:41.321361 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt show --select source:raw.raw_customers', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'E:\\Data Engineering\\retail_erp_dbt\\retail_erp_project\\dbt\\retail_erp\\logs'}
+[0m19:28:41.491905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '585abb6f-18a8-47fb-ab25-a13d8d69018f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C5792B8C0>]}
+[0m19:28:41.550093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '585abb6f-18a8-47fb-ab25-a13d8d69018f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C59418E30>]}
+[0m19:28:41.562781 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m19:28:41.765113 [debug] [MainThread]: checksum: b5ae68cb5bf32e987498c1541ffdb4dad449ad8fc953043c4b03557cc33f5a4c, vars: {}, profile: retail_erp, target: dev, version: 1.12.2
+[0m19:28:41.892319 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:28:41.892319 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:28:41.892319 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:28:41.900934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '585abb6f-18a8-47fb-ab25-a13d8d69018f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C592501A0>]}
+[0m19:28:41.993387 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:28:41.996145 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:28:42.023721 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:28:42.026321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '585abb6f-18a8-47fb-ab25-a13d8d69018f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C59D92F30>]}
+[0m19:28:42.027322 [info ] [MainThread]: Found 14 models, 5 sources, 477 macros
+[0m19:28:42.027322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '585abb6f-18a8-47fb-ab25-a13d8d69018f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C59A91280>]}
+[0m19:28:42.029836 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m19:28:42.031926 [debug] [MainThread]: Command end result
+[0m19:28:42.059912 [debug] [MainThread]: Wrote artifact WritableManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\manifest.json
+[0m19:28:42.063000 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\semantic_manifest.json
+[0m19:28:42.067012 [debug] [MainThread]: Wrote artifact OsiDocument to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\osi_document.json
+[0m19:28:42.070019 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\target\run_results.json
+[0m19:28:42.070531 [debug] [MainThread]: Command `dbt show` succeeded at 19:28:42.070531 after 0.91 seconds
+[0m19:28:42.070531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C5560FE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C578E2120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C578E2090>]}
+[0m19:28:42.071622 [debug] [MainThread]: Flushing usage events
+[0m19:28:43.454090 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:29:08.044696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A51574A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A524C70E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A5274BBF0>]}
+
+
+============================== 00:29:08.048694 | 5e3c32c1-6609-4384-9186-b3e9603b9725 ==============================
+[0m00:29:08.048694 [info ] [MainThread]: Running with dbt=1.12.2
+[0m00:29:08.048694 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': "C:\\Users\\Santosh G's\\.dbt", 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'E:\\Data Engineering\\retail_erp_dbt\\retail_erp_project\\dbt\\retail_erp\\logs'}
+[0m00:29:08.068194 [info ] [MainThread]: dbt version: 1.12.2
+[0m00:29:08.069198 [info ] [MainThread]: python version: 3.12.10
+[0m00:29:08.069198 [info ] [MainThread]: python path: E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\Scripts\python.exe
+[0m00:29:08.070199 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:29:08.127157 [info ] [MainThread]: Using profiles dir at C:\Users\Santosh G's\.dbt
+[0m00:29:08.127157 [info ] [MainThread]: Using profiles.yml file at C:\Users\Santosh G's\.dbt\profiles.yml
+[0m00:29:08.128210 [info ] [MainThread]: Using dbt_project.yml file at E:\Data Engineering\retail_erp_dbt\retail_erp_project\dbt\retail_erp\dbt_project.yml
+[0m00:29:08.420842 [info ] [MainThread]: adapter type: postgres
+[0m00:29:08.420842 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:29:08.525814 [info ] [MainThread]: Configuration:
+[0m00:29:08.526815 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:29:08.527738 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:29:08.527738 [info ] [MainThread]: Required dependencies:
+[0m00:29:08.528942 [debug] [MainThread]: Executing "git --help"
+[0m00:29:08.567394 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:29:08.568462 [debug] [MainThread]: STDERR: "b''"
+[0m00:29:08.568462 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:29:08.569434 [info ] [MainThread]: Connection:
+[0m00:29:08.569434 [info ] [MainThread]:   host: localhost
+[0m00:29:08.569434 [info ] [MainThread]:   port: 5432
+[0m00:29:08.569434 [info ] [MainThread]:   user: postgres
+[0m00:29:08.570919 [info ] [MainThread]:   database: retail_erp_dw
+[0m00:29:08.570919 [info ] [MainThread]:   schema: dbt_dev
+[0m00:29:08.570919 [info ] [MainThread]:   connect_timeout: 10
+[0m00:29:08.571917 [info ] [MainThread]:   role: None
+[0m00:29:08.571917 [info ] [MainThread]:   search_path: None
+[0m00:29:08.571917 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:29:08.572917 [info ] [MainThread]:   sslmode: None
+[0m00:29:08.572917 [info ] [MainThread]:   sslcert: None
+[0m00:29:08.572917 [info ] [MainThread]:   sslkey: None
+[0m00:29:08.572917 [info ] [MainThread]:   sslrootcert: None
+[0m00:29:08.573917 [info ] [MainThread]:   application_name: dbt
+[0m00:29:08.573917 [info ] [MainThread]:   autocommit: False
+[0m00:29:08.573917 [info ] [MainThread]:   retries: 1
+[0m00:29:08.574919 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:29:09.162616 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:29:09.439104 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:29:09.439104 [debug] [MainThread]: On debug: select 1 as id
+[0m00:29:09.440215 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:29:09.460664 [debug] [MainThread]: SQL status: SELECT 1 in 0.020 seconds
+[0m00:29:09.461666 [debug] [MainThread]: On debug: Close
+[0m00:29:09.461666 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:29:09.462666 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:29:09.463666 [debug] [MainThread]: Command `dbt debug` succeeded at 00:29:09.463666 after 1.68 seconds
+[0m00:29:09.463666 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:29:09.464666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A5020E9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A51F76D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A51F76E10>]}
+[0m00:29:09.464666 [debug] [MainThread]: Flushing usage events
+[0m00:29:11.709081 [debug] [MainThread]: An error was encountered while trying to flush usage events
